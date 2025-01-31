@@ -4,6 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akan Name Generator</title>
+    <link rel="stylesheet" href=".css/styles.css" />
   </head>
-  <body></body>
+  <body>
+     <div class="container">
+        <header>
+            <h1>Akan Name Generator</h1>
+            <p class="description">
+                Discover your Akan name based on Ghanaian tradition. In Ghana, children are often given their first name as a 
+                'day name' corresponding to the day of the week they were born.
+            </p>
+        </header>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1572006235893-1425fca5c184?auto=format&fit=crop&q=80" 
+                 alt="Ghanaian Culture">
+        </div>
+
+        <main>
+            <form id="akanForm" class="form-card">
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="day">Day:</label>
+                        <input type="number" id="day" required min="1" max="31">
+                    </div>
+                    <div class="input-group">
+                        <label for="month">Month:</label>
+                        <input type="number" id="month" required min="1" max="12">
+                    </div>
+                    <div class="input-group">
+                        <label for="year">Year:</label>
+                        <input type="number" id="year" required min="1900">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <button type="submit">KA BOOM</button>
+            </form>
+
+            <div id="result" class="result hidden">
+                <div class="result-icon">👤</div>
+                <h2>Your Akan Name is</h2>
+                <p id="akanName"></p>
+            </div>
+
+            <div id="error" class="error hidden"></div>
+
+            <div class="name-tables">
+                <div class="name-table">
+                    <h3>Male Akan Names</h3>
+                    <table>
+                        <tr><td>Sunday</td><td>Kwasi</td></tr>
+                        <tr><td>Monday</td><td>Kwadwo</td></tr>
+                        <tr><td>Tuesday</td><td>Kwabena</td></tr>
+                        <tr><td>Wednesday</td><td>Kwaku</td></tr>
+                        <tr><td>Thursday</td><td>Yaw</td></tr>
+                        <tr><td>Friday</td><td>Kofi</td></tr>
+                        <tr><td>Saturday</td><td>Kwame</td></tr>
+                    </table>
+                </div>
+
+                <div class="name-table">
+                    <h3>Female Akan Names</h3>
+                    <table>
+                        <tr><td>Sunday</td><td>Akosua</td></tr>
+                        <tr><td>Monday</td><td>Adwoa</td></tr>
+                        <tr><td>Tuesday</td><td>Abenaa</td></tr>
+                        <tr><td>Wednesday</td><td>Akua</td></tr>
+                        <tr><td>Thursday</td><td>Yaa</td></tr>
+                        <tr><td>Friday</td><td>Afua</td></tr>
+                        <tr><td>Saturday</td><td>Ama</td></tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+  </body>
 </html>
